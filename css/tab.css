@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*기본값*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+    min-width: 1450px
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*header*/
+#header {
+    background-color: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #000;
+
+}
+
+#header_inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.login {
+    text-align: right;
+}
+
+.login {
+    padding-top: 10px;
+}
+
+.login>li {
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 12px;
+
+}
+
+.login>li::after {
+    content: "l";
+    color: rgb(225, 225, 225);
+    padding-left: 10px;
+}
+
+.login>li.que::after,
+.login>li:nth-child(4)::after {
+    content: "";
+    padding-left: 0;
+}
+
+#header li:hover a {
+    text-decoration: underline;
+}
+
+
+li.que {
+    text-align: center;
+    padding: 0;
+    width: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+li.que a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.que img {
+    vertical-align: middle;
+}
+
+.que:hover img {
+    opacity: 0.5;
+}
+
+#gnb>li {
+    display: inline-block;
+    padding: 20px 15px 30px;
+    cursor: pointer;
+}
+
+#gnb {
+    text-align: right;
+}
+
+#logo {
+    float: left;
+    padding-top: 20px;
+}
+
+.header_right {
+    float: right;
+}
+
+#gnb>li:hover>a {
+    color: #669900;
+}
+
+#gnb>li:hover {
+    background-color: #2c2a29;
+}
+
+/*container*/
+#container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#container>h2 {
+    padding: 20px 0 10px;
+}
+
+.map {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.map li {
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.map li {
+    color: #777777;
+}
+
+.map li img {
+    vertical-align: middle;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs li {
+    padding: 20px;
+    color: #777777;
+}
+
+/*방금 클릭한 버튼 스타일*/
+.tabs li.active {
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tab_content h1 {
+    padding-bottom: 30px;
+}
+
+.tab_content ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab_content ul li {
+    margin: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.mark1 {
+    position: absolute;
+    left: 5px;
+    bottom: 40px;
+}
+
+.mark2 {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+}

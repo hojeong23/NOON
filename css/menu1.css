@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font-size: 16px;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*필요스타일시작*/
+
+/*햄버거 버튼모양*/
+.slide-open {
+    position: absolute;
+    top: 0.2%;
+    right: 0px;
+
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.burgur {
+    right: 30%;
+    top: 50%;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+}
+
+.burgur .top-line {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -5px;
+    content: '';
+    position: absolute;
+    right: 0;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+
+}
+
+.burgur .bot-line {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    top: -5px;
+    content: '';
+    position: absolute;
+    right: 0;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+}
+
+.burgur.on {
+    width: 0;
+}
+
+.burgur.on .bot-line {
+    -webkit-transform: translateY(5px) rotate(135deg);
+    transform: translateY(5px) rotate(135deg);
+}
+
+.burgur.on .top-line {
+    -webkit-transform: translateY(-5px) rotate(-135deg);
+    transform: translateY(-5px) rotate(-135deg);
+}
+
+/*x버튼 변경*/
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    height: 42px;
+    width: 42px;
+    background-image: url(../images/x_btn.png);
+}
+
+/*메뉴부분 모양*/
+.slide {
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 60%;
+    height: 100vh;
+    /*이 너비에 따라 보이는 부분이 변화함*/
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    -webkit-transition: right .3s;
+    -moz-transition: right .3s;
+    -ms-transition: right .3s;
+    -o-transition: right .3s;
+    transition: right .3s;
+    background-color: #000000;
+
+}
+
+
+.slide-title {
+    width: 100%;
+    height: 100px;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.slide.on {
+    right: 0;
+}
+
+
+/*필요스타일끝*/
+.big,
+.big1,
+.big2,
+.big3 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+.big:hover {
+    color: #FFE06D;
+    opacity: 1;
+}
+
+
+.big1:hover {
+    color: #2EA98C;
+}
+
+.big2:hover {
+    color: #EE5844;
+}
+
+.big3:hover {
+    color: #F88843;
+}
+
+
+.input-box {
+    display: flex;
+    font-family: "pretendard";
+    width: 700px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fff;
+    box-sizing: border-box;
+    background-color: #000000;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input-box i {
+    flex: 1;
+}
+
+.input-box img {
+    padding-right: 30px;
+}
+
+.input-box input {
+    flex: 7;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 50px;
+}
+
+.brand {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.product {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.subscribe {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.community {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.small_menu {
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+}
+
+
+.brand:hover .small_menu {
+    opacity: 1;
+}
+
+.product:hover .small_menu {
+    opacity: 1;
+}
+
+.community:hover .small_menu {
+    opacity: 1;
+}
+
+.subscribe:hover .small_menu {
+    opacity: 1;
+}
+
+.small_mint a:hover {
+    color: #2EA98C;
+}
+
+.small_orange a:hover {
+    color: #F88843;
+}
+
+.small_red a:hover {
+    color: #EE5844;
+}
+
+.small_yellow a:hover {
+    color: #FFE06D;
+}
+
+.small_menu a {
+    color: #6B6B6B;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.small_font {
+    padding: 0px;
+}
+
+.account {
+    margin-top: 100px;
+}
+
+.login {
+    display: flex;
+
+}
+
+.create a {
+    margin-left: 20px;
+    color: #6B6B6B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rline a {
+    padding-right: 20px;
+    border-right: 2px solid #6B6B6B;
+
+    color: #6B6B6B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rline2 a {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #6B6B6B;
+
+    color: #6B6B6B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slide.active {
+    display: block;
+}
+
+.toggle {
+    position: fixed;
+    left: 10px;
+    top: 30px;
+}
+
+
+
+/**/
+.scroll-disable {
+    /* 스크롤 비활성화 클래스 */
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+/* 가로 메뉴파 펼침 시 배경 스크롤 막는 코드
+https://codepen.io/jsik/pen/rNQYPYR
+*/

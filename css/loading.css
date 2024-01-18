@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+
+/*기본값*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    min-width: 1450px;
+
+}
+
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: url('#goo');
+    animation: rotate-move 2s ease-in-out infinite;
+
+}
+
+.dot {
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dot-3 {
+    background-color: #EE5844;
+    animation: dot-3-move 2s ease infinite;
+}
+
+.dot-2 {
+    background-color: #2EA98C;
+    animation: dot-2-move 2s ease infinite;
+}
+
+.dot-1 {
+    background-color: #ffe386;
+    animation: dot-1-move 2s ease infinite;
+}
+
+@keyframes dot-3-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translateY(-18px) scale(.45)
+    }
+
+    60% {
+        transform: translateY(-40px) scale(.45)
+    }
+
+    80% {
+        transform: translateY(-40px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes dot-2-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translate(-16px, 12px) scale(.45)
+    }
+
+    60% {
+        transform: translate(-40px, 40px) scale(.45)
+    }
+
+    80% {
+        transform: translate(-40px, 40px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes dot-1-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translate(16px, 12px) scale(.45)
+    }
+
+    60% {
+        transform: translate(40px, 40px) scale(.45)
+    }
+
+    80% {
+        transform: translate(40px, 40px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes rotate-move {
+    55% {
+        transform: rotate(0deg)
+    }
+
+    80% {
+        transform: rotate(360deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}

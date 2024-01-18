@@ -1,0 +1,948 @@
+@charset "utf-8";
+
+/*기본값*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+    min-width: 1450px;
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #2EA98C;
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #EE5844;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #EE5844;
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #eee;
+}
+
+/*헤더*/
+
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+/*메인*/
+#main {
+    padding-top: 70px;
+}
+
+.search_in {
+    display: flex;
+}
+
+.main_in {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/*검색바*/
+.input-box1 {
+    display: flex;
+    font-family: "pretendard";
+    width: 230px;
+    padding: 7px 50px 7px 10px;
+    border-radius: 39px 39px;
+
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+}
+
+.input-box1 i {
+    flex: 1;
+}
+
+.input-box1 img {
+    padding-right: 10px;
+}
+
+.input-box1 input {
+    flex: 7;
+    border: none;
+    outline: none;
+    background-color: #F6F6F6;
+}
+
+
+.search1 a {
+    margin-left: 10px;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #192C3E;
+    border-radius: 39px 39px;
+    display: block;
+
+}
+
+.search1 a:hover {
+    background-color: #EE5844;
+    transition: all 0.2s;
+}
+
+/*탭*/
+.title {
+    font-size: 45px;
+    letter-spacing: -2px;
+}
+
+#wrapper {
+    background-color: #fff;
+}
+
+.wrapper_in {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.main_inn {
+    margin: 10px;
+}
+
+.main_inn ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_inn li {
+    padding-left: 15px;
+}
+
+/*인기순 최신순*/
+
+.wrapper_in {
+    position: relative;
+}
+
+.famous {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.famous a {
+
+    margin-left: 20px;
+}
+
+.off a {
+    color: #c5c5c5;
+}
+
+/*TAB CSS*/
+
+
+
+.tabs {
+    display: flex;
+}
+
+ul.tabs li {
+    margin: 0;
+    padding: 0;
+
+    margin-left: 10px;
+    height: 31px;
+    /*--Subtract 1px from the height of the unordered list--*/
+    line-height: 31px;
+    /*--Vertically aligns the text within the tab--*/
+
+    border-left: none;
+    margin-bottom: -1px;
+    /*--Pull the list item down 1px--*/
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
+    border-radius: 36px 36px;
+}
+
+ul.tabs li:nth-child(1) {
+    margin-left: 0px;
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    padding: 0 20px;
+
+    border-radius: 36px 36px;
+    outline: none;
+}
+
+ul.tabs li a:hover {
+    background: #F88843;
+    color: #fff;
+}
+
+ul.tabs .purple a:hover {
+    background: #544973;
+    color: #fff;
+}
+
+ul.tabs .fruit a:hover {
+    background: #EE5844;
+    color: #fff;
+}
+
+ul.tabs .navy a:hover {
+    background: #192C3E;
+    color: #fff;
+}
+
+.tabs .navy.active,
+.tabs .navy.active a:hover {
+
+    background: #192C3E;
+
+
+}
+
+.tabs .fruit.active,
+.tabs .fruit.active a:hover {
+
+    background: #EE5844;
+
+
+}
+
+.tabs .purple.active,
+.tabs .purple.active a:hover {
+
+    background: #544973;
+
+
+}
+
+.tabs li.active,
+.tabs li.active a:hover {
+
+    background: #F88843;
+
+
+}
+
+
+/*Tab Conent CSS*/
+.tab_container {
+
+    border-top: none;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.list {
+    display: flex;
+
+    margin-top: 50px;
+}
+
+.list>li {
+    padding: 10px;
+}
+
+.pd_name {
+    margin-top: 10px;
+}
+
+.best {
+    color: #2EA98C;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sale {
+    color: #EE5844;
+    margin-right: 10px;
+}
+
+.new {
+    color: #EE5844;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.line_price {
+    color: #BCBCBC;
+    font-size: 23px;
+    margin-top: 10px;
+    text-decoration: line-through;
+}
+
+.list:nth-last-child(1) {
+    margin-bottom: 150px;
+}
+
+
+
+/*배너*/
+.last_banner {
+    width: 1320px;
+    margin: 50px auto;
+}
+
+.last_banner img {
+    width: 1320px;
+    padding-bottom: 40px;
+}
+
+/*이미지 변경*/
+.img-box {
+    position: relative;
+    width: 308px;
+    height: 344px;
+}
+
+.img-box>a>img {
+    position: absolute;
+    width: 308px;
+    height: 344px;
+}
+
+.img-box img.img-hover {
+    opacity: 0;
+}
+
+/* .img-box:hover img.img {
+    opacity: 0;
+    transition: all 2s;
+} */
+
+.img-box:hover img.img-hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+
+.buy {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+
+
+}
+
+.img-box:hover .buy {
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+
+.heart {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E2E2;
+
+}
+
+
+
+.gray a {
+    width: 127px;
+    height: 54px;
+    background-color: #E2E2E2;
+    color: #544973;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.heart:hover {
+    background-color: #544973;
+}
+
+.gray a:hover {
+    background-color: #544973;
+    color: #fff;
+}
+
+.pur a {
+    width: 127px;
+    height: 54px;
+    background-color: #544973;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.pur a:hover {
+    background-color: #544973;
+    color: #fff;
+}
+
+.plusone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #544973;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.new_red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #EE5844;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.bestpd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #2EA98C;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+
+}
+
+.bestpd_oran {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #F88843;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+
+}
+
+.bestpd_red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #EE5844;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+
+}
+
+.bestpd_navy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #192C3E;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+
+}
+
+/*이미지변경없는 버튼모음*/
+.nochange {
+    position: relative;
+}
+
+.bestpd_navy1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 37px;
+    background-color: #192C3E;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+
+}
+
+.buy1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.nochange:hover .buy1 {
+    opacity: 1;
+}
+
+.heart4 {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E2E2;
+
+}
+
+.gray4 a {
+    width: 127px;
+    height: 54px;
+    background-color: #E2E2E2;
+    color: #192C3E;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heart4:hover {
+    background-color: #192C3E;
+}
+
+.gray4 a:hover {
+    background-color: #192C3E;
+    color: #fff;
+}
+
+.navybtn1 a {
+    width: 127px;
+    height: 54px;
+    background-color: #192C3E;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.orange a:hover {
+    background-color: #192C3E;
+    color: #fff;
+}
+
+/*맥주 구매하기 버튼 호버*/
+.heart1 {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E2E2;
+
+}
+
+.gray1 a {
+    width: 127px;
+    height: 54px;
+    background-color: #E2E2E2;
+    color: #F88843;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heart1:hover {
+    background-color: #F88843;
+}
+
+.gray1 a:hover {
+    background-color: #F88843;
+    color: #fff;
+}
+
+.orange a {
+    width: 127px;
+    height: 54px;
+    background-color: #F88843;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.orange a:hover {
+    background-color: #F88843;
+    color: #fff;
+}
+
+/*프루츠라벨*/
+.heart2 {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E2E2;
+
+}
+
+.heart2:hover {
+    background-color: #EE5844;
+}
+
+.gray2 a:hover {
+    background-color: #EE5844;
+    color: #fff;
+}
+
+.gray2 a {
+    width: 127px;
+    height: 54px;
+    background-color: #E2E2E2;
+    color: #EE5844;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.redbtn a:hover {
+    background-color: #EE5844;
+    color: #fff;
+}
+
+.redbtn a {
+    width: 127px;
+    height: 54px;
+    background-color: #EE5844;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*굿즈버튼*/
+.heart3 {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E2E2;
+
+}
+
+.heart3:hover {
+    background-color: #192C3E;
+}
+
+.gray3 a:hover {
+    background-color: #192C3E;
+    color: #fff;
+}
+
+.gray3 a {
+    width: 127px;
+    height: 54px;
+    background-color: #E2E2E2;
+    color: #192C3E;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.navybtn a:hover {
+    background-color: #192C3E;
+    color: #fff;
+}
+
+.navybtn a {
+    width: 127px;
+    height: 54px;
+    background-color: #192C3E;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*푸터*/
+#footer {
+    background: #292929;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft_left {
+    display: flex;
+
+}
+
+.left_in {
+    margin-left: 50px;
+}
+
+.left_ul {
+    display: flex;
+
+}
+
+.left_ul li {
+    margin-bottom: 30px;
+}
+
+.left_ul li a {
+    color: #bdbdbd;
+    font-size: 14px;
+    padding: 0px 20px;
+    border-right: 1px solid #b8b8b8;
+    margin-bottom: 20px;
+}
+
+.left_ul li a:hover {
+    color: #e7e7e7;
+}
+
+.left_ul li:nth-child(1) a {
+    padding-left: 0px;
+}
+
+.left_ul li:nth-last-child(1) a {
+    border: none;
+}
+
+.left_in p {
+    font-size: 13px;
+    font-weight: 100;
+    color: #707070;
+}
+
+#family {
+
+    background-color: #ffffff;
+    color: #b8b8b8;
+    width: 160px;
+    padding: 5px;
+    border: none;
+
+    outline: none;
+    /*폼관련 태그(input, textarea, select태그 등)를 사용하기 위해 클릭하면 바깥쪽에 생기는 검정 두꺼운 선을 없애는 코드*/
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sns li {
+    padding-left: 5px;
+}
+
+.ft_left {
+    display: flex;
+
+}
+
+.left_in {
+    margin-left: 50px;
+}
+
+.left_ul {
+    display: flex;
+
+}
+
+.left_ul li {
+    margin-bottom: 30px;
+}
+
+.left_ul li a {
+    color: #a1a1a1;
+    font-size: 14px;
+    padding: 0px 20px;
+    border-right: 1px solid #969696;
+    margin-bottom: 20px;
+}
+
+.left_ul li a:hover {
+    color: #e7e7e7;
+    transition: all 0.5s
+}
+
+.left_ul li:nth-child(1) a {
+    padding-left: 0px;
+}
+
+.left_ul li:nth-last-child(1) a {
+    border: none;
+}
+
+.left_in p {
+    font-size: 13px;
+    font-weight: 100;
+    color: #707070;
+}
+
+#family {
+    font-family: "pretendard";
+
+    background-color: #292929;
+    color: #b8b8b8;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    /*폼관련 태그(input, textarea, select태그 등)를 사용하기 위해 클릭하면 바깥쪽에 생기는 검정 두꺼운 선을 없애는 코드*/
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+}
+
+.sns img {
+    opacity: 0.5;
+}
+
+.sns img:hover {
+    opacity: 1;
+    transition: all 0.5s
+}
+
+.sns li {
+    padding-left: 5px;
+
+}

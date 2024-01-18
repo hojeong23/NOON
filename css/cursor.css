@@ -1,0 +1,41 @@
+body {
+    background: #fff;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 200ms ease-out;
+    mix-blend-mode: difference;
+}
+
+.cursor.cursor_expand {
+    transform: scale(1.5);
+}
+
+.title {
+    margin-top: 200px;
+    padding: 30px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.link {
+    display: block;
+    margin-top: 200px;
+    padding: 30px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}

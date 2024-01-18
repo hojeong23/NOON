@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*기본값*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    min-width: 1450px;
+    overflow: hidden;
+
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #2EA98C;
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* 스크롤바 가로 사이즈 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 스크롤바 막대기 */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #EE5844;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #EE5844;
+}
+
+/* 스크롤바 백그라운드 */
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #eee;
+}
+
+/*헤더*/
+#header {
+    background-color: #000000;
+
+
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+
+.title {
+    background-color: #000;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+.title_in {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 37px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.alcohol {
+    display: flex;
+
+}
+
+.alcohol li {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.alcohol img {
+    width: 100%;
+    height: auto;
+
+}
+
+.black a {
+    background-color: rgba(0, 0, 0, 0.842);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 730px;
+    text-align: center;
+    padding-top: 320px;
+    padding-bottom: 300px;
+    opacity: 1;
+    color: #cecece;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+.black:hover {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+.black_con {
+
+    font-size: 16px;
+}
+
+.bblack {
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    height: 81px;
+    color: #555;
+    display: block;
+}
