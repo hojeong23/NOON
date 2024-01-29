@@ -229,7 +229,7 @@ ul.tabs li:nth-child(1) {
     margin-left: 0px;
 }
 
-ul.tabs li a {
+ul.tabs li span {
     text-decoration: none;
     color: #fff;
     display: block;
@@ -240,28 +240,28 @@ ul.tabs li a {
     outline: none;
 }
 
-ul.tabs li a:hover {
+ul.tabs .orange span:hover {
     background: #F88843;
     color: #fff;
 }
 
-ul.tabs .purple a:hover {
+ul.tabs .purple span:hover {
     background: #544973;
     color: #fff;
 }
 
-ul.tabs .fruit a:hover {
+ul.tabs .fruit span:hover {
     background: #EE5844;
     color: #fff;
 }
 
-ul.tabs .navy a:hover {
+ul.tabs .navy span:hover {
     background: #192C3E;
     color: #fff;
 }
 
 .tabs .navy.active,
-.tabs .navy.active a:hover {
+.tabs .navy.active span:hover {
 
     background: #192C3E;
 
@@ -269,7 +269,7 @@ ul.tabs .navy a:hover {
 }
 
 .tabs .fruit.active,
-.tabs .fruit.active a:hover {
+.tabs .fruit.active span:hover {
 
     background: #EE5844;
 
@@ -277,15 +277,15 @@ ul.tabs .navy a:hover {
 }
 
 .tabs .purple.active,
-.tabs .purple.active a:hover {
+.tabs .purple.active span:hover {
 
     background: #544973;
 
 
 }
 
-.tabs li.active,
-.tabs li.active a:hover {
+.tabs .orange.active,
+.tabs .orange .active span:hover {
 
     background: #F88843;
 
