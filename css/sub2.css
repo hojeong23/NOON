@@ -235,60 +235,39 @@ ul.tabs li span {
     display: block;
     font-size: 1.2em;
     padding: 0 20px;
+    cursor: pointer;
 
     border-radius: 36px 36px;
     outline: none;
 }
 
-ul.tabs .orange span:hover {
-    background: #F88843;
-    color: #fff;
-}
 
-ul.tabs .purple span:hover {
-    background: #544973;
-    color: #fff;
-}
-
-ul.tabs .fruit span:hover {
-    background: #EE5844;
-    color: #fff;
-}
-
-ul.tabs .navy span:hover {
-    background: #192C3E;
-    color: #fff;
-}
-
-.tabs .navy.active,
-.tabs .navy.active span:hover {
+.tabs li:last-child.active,
+.tabs li:last-child.active span:hover {
 
     background: #192C3E;
 
-
 }
 
-.tabs .fruit.active,
-.tabs .fruit.active span:hover {
+.tabs li:nth-child(3).active,
+.tabs li:nth-child(3).active span:hover {
 
     background: #EE5844;
 
-
 }
 
-.tabs .purple.active,
-.tabs .purple.active span:hover {
+.tabs li:nth-child(1).active,
+.tabs li:nth-child(1).active span:hover {
 
     background: #544973;
 
 
 }
 
-.tabs .orange.active,
-.tabs .orange .active span:hover {
+.tabs li:nth-child(2).active,
+.tabs li:nth-child(2).active span:hover {
 
     background: #F88843;
-
 
 }
 
@@ -631,10 +610,7 @@ ul.tabs .navy span:hover {
 
 
 
-.orange a:hover {
-    background-color: #192C3E;
-    color: #fff;
-}
+
 
 /*맥주 구매하기 버튼 호버*/
 .heart1 {
