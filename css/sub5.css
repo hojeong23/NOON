@@ -999,9 +999,7 @@ div.changing-title {
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    
 
 
 }
@@ -1062,6 +1060,9 @@ select {
 }
 
 #family {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-family: "pretendard";
 
     background-color: #292929;
