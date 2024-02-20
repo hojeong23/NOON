@@ -835,6 +835,13 @@ ul.tabs li span {
     /*폼관련 태그(input, textarea, select태그 등)를 사용하기 위해 클릭하면 바깥쪽에 생기는 검정 두꺼운 선을 없애는 코드*/
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
 .sns {
     display: flex;
     justify-content: flex-end;
