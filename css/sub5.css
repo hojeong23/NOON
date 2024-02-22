@@ -130,36 +130,40 @@ div.changing-title {
 
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-
-    h1 {
-        font-size: 120px;
-        color: #000;
-        position: absolute;
-        left: 0;
-        top: 30%;
-        margin: 0;
-
-        .letter {
-            position: relative;
-            top: 1.2em;
-
-            &.in {
-                animation-name: letter-in;
-                animation-duration: 0.3s;
-                animation-timing-function: ease-out;
-                animation-fill-mode: forwards;
-            }
-
-            &.out {
-                top: 0em;
-                animation-name: letter-out;
-                animation-duration: 0.3s;
-                animation-timing-function: ease-in;
-                animation-fill-mode: forwards;
-            }
-        }
-    }
 }
+
+
+.changing-title h1 {
+    font-size: 120px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    margin: 0;
+}
+
+
+.changing-title .letter {
+    position: relative;
+    top: 1.2em;
+}
+
+
+.changing-title .letter.in {
+    animation-name: letter-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.changing-title .letter.out {
+    top: 0em;
+    animation-name: letter-out;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
 
 
 .h2_lines:before {
@@ -455,12 +459,8 @@ div.changing-title {
 .page1 {
     background-color: #FDC97C;
     color: #000000;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-}
-
-.page1 h1 {
-    white-space: no-wrap;
 }
 
 .page2 {
@@ -1000,15 +1000,7 @@ div.changing-title {
 
     outline: none;
     /*폼관련 태그(input, textarea, select태그 등)를 사용하기 위해 클릭하면 바깥쪽에 생기는 검정 두꺼운 선을 없애는 코드*/
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    /*화살표 배경 넣기*/
-    background: url('../images/optionplus.png') no-repeat 98% center;
 }
-
-
 
 .sns {
     display: flex;
