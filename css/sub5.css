@@ -459,19 +459,20 @@ div.changing-title {
 .page1 {
     background-color: #FDC97C;
     color: #000000;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .page2 {
     background-color: hsl(0, 0%, 0%);
     color: #ffffff;
-    font-size: 70PX;
+    font-size: 60px;
     font-weight: bold;
 }
 
 .page2 h1 {
     color: #fff;
+    white-space: no-wrap;
 }
 
 /*blockreveal*/
