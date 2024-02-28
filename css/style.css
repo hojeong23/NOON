@@ -529,9 +529,10 @@ body {
 }
 
 .text_slide2 {
-    font-size: 35px;
+    font-size: 32px;
+    font-weight: 600;
     width: 3580px;
-    padding: 20px;
+    padding: 20px 10px;
     color: #000;
     display: flex;
     justify-content: space-around;
@@ -589,6 +590,7 @@ body {
 
     padding: 60px;
     font-size: 35px;
+    font-weight: 500;
     line-height: 50px;
     overflow: hidden;
 }
@@ -627,6 +629,7 @@ body {
 .pu_text {
     padding: 60px;
     font-size: 35px;
+    font-weight: 500;
     line-height: 50px;
     text-align: end;
     overflow: hidden;

@@ -8,7 +8,8 @@ body {
     left: 0;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: #000;
+    /* 배경색을 검은색으로 변경 */
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
@@ -18,15 +19,6 @@ body {
 
 .cursor.cursor_expand {
     transform: scale(1.5);
-}
-
-.title {
-    margin-top: 200px;
-    padding: 30px 0;
-    font-size: 40px;
-    font-weight: 700;
-    color: #000;
-    text-align: center;
 }
 
 .link {

@@ -461,6 +461,7 @@ div.changing-title {
     color: #000000;
     font-size: 50px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .page2 {
@@ -472,7 +473,7 @@ div.changing-title {
 
 .page2 h1 {
     color: #fff;
-    white-space: no-wrap;
+
 }
 
 /*blockreveal*/
